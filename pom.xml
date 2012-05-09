@@ -81,5 +81,9 @@
     <jenkins.version>1.424</jenkins.version>
   </properties>
 
+  <scm>
+  	<connection>git@github.com:hadashi/openid-plugin-new.git</connection>
+  	<developerConnection>git@github.com:hadashi/openid-plugin-new.git</developerConnection>
+  </scm>
 </project>  
 
