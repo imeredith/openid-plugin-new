@@ -82,8 +82,8 @@
   </properties>
 
   <scm>
-  	<connection>git@github.com:hadashi/openid-plugin-new.git</connection>
-  	<developerConnection>git@github.com:hadashi/openid-plugin-new.git</developerConnection>
+  	<connection>scm:git:git@github.com:hadashi/openid-plugin-new.git</connection>
+  	<developerConnection>scm:git:git@github.com:hadashi/openid-plugin-new.git</developerConnection>
   </scm>
 </project>  
 
