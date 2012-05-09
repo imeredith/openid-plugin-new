@@ -81,6 +81,34 @@
     <jenkins.version>1.424</jenkins.version>
   </properties>
 
+  <build>
+    <extensions> 
+         <extension> 
+            <groupId>org.apache.maven.wagon</groupId> 
+            <artifactId>wagon-webdav-jackrabbit</artifactId> 
+            <version>1.0-beta-7</version> 
+         </extension> 
+     </extensions> 
+    <plugins>
+      <plugin>
+	<groupId>org.jenkins-ci.tools</groupId>
+	<artifactId>maven-hpi-plugin</artifactId>
+	<configuration>
+	   <disabledTestInjection>true</disabledTestInjection>
+	</configuration>
+      </plugin>
+      <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-surefire-plugin</artifactId>
+	<configuration>
+	  <forkMode>never</forkMode>
+          <systemPropertyVariables>
+            <swarm.test>true</swarm.test>	
+	  </systemPropertyVariables>
+	</configuration>
+      </plugin>
+    </plugins>
+  </build>
   <scm>
   	<connection>scm:git:git@github.com:hadashi/openid-plugin-new.git</connection>
   	<developerConnection>scm:git:git@github.com:hadashi/openid-plugin-new.git</developerConnection>
