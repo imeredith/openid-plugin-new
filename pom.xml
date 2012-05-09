@@ -34,7 +34,12 @@
   </dependencies>
   -->
   <dependencies>
-    <dependency>
+<dependency>
+<groupId>net.sourceforge.nekohtml</groupId>
+<artifactId>nekohtml</artifactId>
+<version>1.9.13</version>
+</dependency> 
+   <dependency>
       <groupId>com.cloudbees</groupId>
       <artifactId>openid4java-team-extension</artifactId>
       <version>1.0</version>
